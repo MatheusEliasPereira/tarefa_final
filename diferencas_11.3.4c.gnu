@@ -1,0 +1,10 @@
+set xlabel font "Helvetica,12"
+set ylabel font "Helvetica,12"
+set tics font "Helvetica,12"
+set title font "Helvetica,12"
+set xlabel "x"
+set ylabel "y(x)"
+set title "Soluções da EDO com h = 0.05"
+plot "dados_11.3_4c.dat" u 1:2 w p pt 7 ps 2 t"Solução y(x)"
+g(x) = (4.0/x) - (2.0/(x**2)) + log(x) -1.5
+replot g(x) w l lw 2 t"Solução Teórica"
